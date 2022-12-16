@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Cheatsheet Html/CSS</title>
+        <link rel="stylesheet" href="./stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+       <!--Header section-->
+
+
+        <header>
+            <ul class="breadcrumb">
+                <li><a href="#htmltags">Common HTML Selectors</a></li>
+                <li><a href="#imgsvids">How to add img/videos in html</a></li>
+                <li><a href="#selectors">Common CSS Tags</a></li>
+                <li><a href="">Box Model</a></li>
+            </ul>
+            <div class="title">
+                <h1>
+                    HTML/CSS Cheatsheet
+                </h1>
+            </div>
+        </header>
+        <main>
+
+
+            <!--Html tags section-->
+
+
+            <div class="htmltags">
+                <h2>
+                    Common HTML Tags
+                </h2>
+                <p>
+                    This section here will list out some of the common HTML Tags we use to create the "barebones" stucture of a website.
+                    I am designing this page as a reference from my own notes. Just a few main components of the basics of HTML and CSS.
+                </p>
+                <ul class="listhtml">
+                    <li>
+                        List tag - like the tags used to create this list using <em>ul, ol, or li</em>  tags is a great way to list information in a more comprehensable
+                        way. You can list out steps or notes like im doing now.
+                    </li>
+                    <li>
+                        Heading tags - These tags are very important. They help shoe the user what the next chunk of content on the page is about.
+                        the go from h1 to h6. 
+                        <h1>Heading 1</h1><h2 class="notext">Heading 2</h2><h3>Heading 3</h3><h4 class="notext">Heading 4</h4><h5>Heading5</h5><h6>Heading 6</h6> 
+                    </li>
+                    <li>
+                        Anchor tags - These tags provide <a href="https://youtu.be/ma67yOdMQfs" target="_blank" class="button">"surfability"</a> of your site. With the a tags you can link your sight to any sight you want.
+                        It's common practice to link to a sight thats relevent to the page you are creating. Use href to set a specific URL or 
+                        relative path to another page on your site.
+                    </li>
+                </ul>
+            </div>
+
+
+        <!--Images and Videos section-->
+
+
+            <div class="imgsvids">
+                <h2>
+                    How to add Images and Videos
+                </h2>
+                <p>
+                    This section will focus on the different ways that we can add images or videos to our website. There are multiple ways to add a 
+                    video or image to your page. First we will show the img tag in use. Next up will be the figure tag with the figcaption included.
+                    Finally we will go over the video tag along with some of its attributes. Let's get started
+                </p>
+                <h4>
+                    Steps to adding an image using img tag:
+                </h4>
+                <ol>
+                    <li>
+                        Add img tag. Remember this is a self closing tag. 
+                    </li>
+                    <li>
+                        Add the src attribute and add the URL of the image you would like to link. This can also be done using a relative path.
+                    </li>
+                    <li>
+                        Next add the alt attribute. This technically does not need to be added but it helps with screen readers and the SEO of the page.
+                        You can add a description of the picture.
+                    </li>
+                    <li>
+                        Next close it out with /> 
+                    </li>
+                </ol>
+                <img src="https://linuxhint.com/wp-content/uploads/2022/04/How-to-add-an-image-in-HTML-4.png" alt="picture of how to add an img in html" class="image"/>
+                <p class="caption">
+                    "The image above was used using the method listed above. I just pulled this image off of google for reference."
+                </p>
+                <h4>
+                    Steps to adding an image using figure tag with figcaption:
+                </h4>
+                <ol>
+                    <li>
+                        First you want to add your figure tag.
+                    </li>
+                    <li>
+                        Next you're going to add your img tag and use the steps above. <br> Note: Other attributes you can add too img are width/height. 
+                        Or you can later style these elements in CSS.
+                    </li>
+                    <li>
+                        Now you can add your figcaption opening tag.
+                    </li>
+                    <li>
+                        Go ahead and add a caption in and it will appear at the bottom left of the image you want to display.
+                    </li>
+                    <li>
+                        Finally go ahead and close out both tags. Make sure you do them in order figcaption then figure. 
+                    </li>
+                </ol>
+                <figure>
+                    <img src="./cheatsheet.image.png" alt="snipping tool image stackoverflow" class="image">
+                    <figcaption class="caption">
+                        "This caption was added using fig caption. Also this time I used a relative path to link the image to the page with ./ 
+                        and the path in the directory you're working in."
+                    </figcaption>
+                </figure>
+                <h4>
+                    Steps for adding a video using video tag:
+                </h4>
+                <ol>
+                    <li>
+                        The first step you want to take is add your opening video tag.
+                    </li>
+                    <li>
+                        Now you can add your src attribute along with the URL/relative path to the video you would like to display. <br>
+                        Note: with video like image you can add the follwing attributes width/height or you can style them in CSS.
+                    </li>
+                    <li>
+                        After you add your URL add the controls attribute. This will the the browser to add default pause, play, or fullscreen
+                        buttons to your video.
+                    </li>
+                    <li>
+                        Close your opening tag and its common practice to add "Video Not Supported" just in case the browser doesn't load your
+                        video this will be displayed.
+                    </li>
+                </ol>
+                <iframe width="713" height="401" src="https://www.youtube.com/embed/y4gWr2fya0I" title="How to Link CSS to HTML Document" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video">
+                </iframe>
+                <p class="caption">
+                    "The video above is just a random video of how to add a CSS stylesheet to your HTML file."
+                </p>
+            </div>
+
+            <!--CSS Selectors Section-->
+
+            
+            <div class="selectors">
+            <h2>
+                Common CSS Selectors
+            </h2>
+            <ul>
+                <li>
+                    Type - this is basically just selecting all of the type of element. For example if you write a CSS ruleset for type h2, the 
+                    following style would style all h2 elements.
+                    <div class="example">
+                    <br>h2 {<br> color: red;<br> }
+                    </div>
+                </li>
+                <li>
+                    Class - This is probably the most common and customizable selector. You use the class attribute in your HTML file, and then you 
+                    can select to style that class like so (.class). Make sure to put a period in front of the class you would like to style.
+                    <div class="example">
+                        <br>.class {<br>background-color: #14bb12;<br>}
+                    </div>
+                </li>
+                <li>
+                    Universal - This slector should only be used when absolutely nessicary. The will still all the elements at once.
+                    <div class="example">
+                        <br>* {<br>box-sizing: border-box;<br>}
+                    </div> 
+                </li>
+                <li>
+                    id - With this selector it is important to style one element at a time. These are for more unique styles for elements.
+                    This meaning that it can not be recycled like the class attribute and should be used when needed. Put the hash (#) in front
+                    to select your id in CSS.
+                    <div class="example">
+                        <br>#id {<br>font-family: 'Zen Dots';<br>font-weight: bold;<br>}
+                    </div>
+                </li>
+            </ul>
+            <img src="./list.snippet.project.png" alt="Snippet of the code used" class="image">
+            <p class="caption">
+                "This snippet above is of the code that was used to style the examples in the list above."
+            </p>
+            </div>
+        </main>
+    </body>
